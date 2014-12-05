@@ -1,0 +1,89 @@
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* Banner/Slider
+* ----------------------------------------------------------------------------------------------------------------
+*/
+
+.slide {
+  min-height:700px;
+  overflow:hidden;
+  width:100%;
+}
+
+.cycle-slideshow {
+
+  position: relative;
+}
+
+#slide-1 {
+  background: url(../images/1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#slide-2 {
+  background: url(../images/2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide-3 {
+  background: url(../images/3.jpg) no-repeat center bottom fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cycle-prev, .cycle-next {
+  margin-top: -1.5em;
+  position: absolute;
+  top:50%;
+
+  z-index:1000;
+
+  a {
+    color:rgba(234, 46, 73,.6);
+    font-size: 4em;
+    transition: all 0.35s ease-in-out 0s;
+
+    &:hover {
+      color:rgb(234, 46, 73);
+    }
+  }
+}
+.cycle-prev {
+  left:3em;
+}
+
+.cycle-next {
+  right:3em;
+}
+
+.slider-header {
+  margin-top:4em;
+}
+h1.slider-header {
+  color:#E7314D;
+  font-family:@banner-desc;
+  font-weight:300;
+  letter-spacing: -1px;
+  margin:0;
+  padding:1em;
+}
+
+.fancy-box {
+  display:inline-block;
+  padding:0 @baseline * 6;
+  width:100%;
+  position: relative;
+}
+
+.fancy-red {
+  background-color:rgba(0, 0, 0, .7);
+  position: absolute;
+  bottom:0;
+}

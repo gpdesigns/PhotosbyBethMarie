@@ -1,0 +1,29 @@
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* Variables
+* ----------------------------------------------------------------------------------------------------------------
+*/
+
+/*  Typography variables  */
+@body-font-size:14px;
+@baseline: (@body-font-size * 1.5);
+@theme-margin: (@baseline * 3);
+@banner-desc:"Roboto", "Helvetica Neue", helvetica, arial, sans-serif;
+@body-font: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+
+.font-face(@fontname, @fontfile) {
+        font-family: '@{fontname}';
+        src: url('../fonts/@{fontfile}-webfont.eot');
+        src: url('../fonts/@{fontfile}-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/@{fontfile}-webfont.woff') format('woff'),
+             url('../fonts/@{fontfile}-webfont.ttf') format('truetype'),
+             url('../fonts/@{fontfile}-webfont.svg#@{fontname}') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+/*  Colors  */
+@color-link:#929292;
+@color-text:#222222;
+@color-link-hover:#7AC4D2;
+@color-header:#929292;

@@ -1,0 +1,55 @@
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* Header
+* ----------------------------------------------------------------------------------------------------------------
+*/
+.main-header {
+  background:white;
+  height:63px;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:9999;
+}
+
+.main-nav {
+  float:right;
+  overflow:hidden;
+
+    li {
+      float:left;
+      margin-left:.5em;
+      
+        .active {
+          color:@color-link-hover;
+        }
+
+        &:after {
+        color: #ddd; 
+        content: "/";
+        padding: 0 10px;
+      }
+        &:last-child:after {
+          content:"";
+        }
+      
+    a {
+      color:@color-link;
+      font-family: @body-font;
+      font-size: @body-font-size;
+      font-weight:bold;
+      letter-spacing: -1px;
+      line-height: @theme-margin;
+      text-transform: uppercase;
+      transition: all 0.35s ease-in-out 0s;
+
+        &:hover {
+          color:@color-link-hover;
+          text-decoration: none;
+        }            
+      }
+    }
+}
+.teal {
+  color:@color-link-hover;
+}

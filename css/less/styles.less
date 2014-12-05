@@ -1,0 +1,27 @@
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* Main Stylesheet
+* ----------------------------------------------------------------------------------------------------------------
+*/
+.page-container {
+  min-height: 100%;
+  margin-bottom:-63px;
+
+    &:after {
+      content:"";
+      display: block;
+      min-height: 100%;
+    }
+}
+
+/*  Load variables  */ 
+@import "variables.less";
+
+/*  Load typography styles  */
+@import "typography.less";
+
+/*  Load section styles  */
+@import "banner.less";
+@import "header.less";
+@import "footer.less";
+/*  Load responsive rules  */
