@@ -3,6 +3,15 @@
 * Main Stylesheet
 * ----------------------------------------------------------------------------------------------------------------
 */
+a,
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+}
+.right {
+  float: right;
+}
 .page-container {
   min-height: 100%;
   margin-bottom: -63px;
@@ -119,13 +128,13 @@ h1 {
 }
 .cycle-prev a,
 .cycle-next a {
-  color: rgba(234, 46, 73, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 4em;
   transition: all 0.35s ease-in-out 0s;
 }
 .cycle-prev a:hover,
 .cycle-next a:hover {
-  color: #ea2e49;
+  color: #ffffff;
 }
 .cycle-prev {
   left: 3em;
@@ -151,7 +160,7 @@ h1.slider-header {
   position: relative;
 }
 .fancy-red {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.5));
   position: absolute;
   bottom: 0;
 }
@@ -161,12 +170,23 @@ h1.slider-header {
 * ----------------------------------------------------------------------------------------------------------------
 */
 .main-header {
-  background: white;
+  background: rgba(0, 0, 0, 0.6);
   height: 63px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
+  border-bottom: 1px solid #222;
+}
+.dark {
+  background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
+  border-right: 1px solid #111;
+  height: 63px;
+  left: 0;
+  margin: 0;
+  padding: 0 0 0 147px;
+  position: absolute;
+  transition: all 1s ease;
 }
 .main-nav {
   float: right;
@@ -180,15 +200,15 @@ h1.slider-header {
   color: #7ac4d2;
 }
 .main-nav li:after {
-  color: #ddd;
+  color: #777;
   content: "/";
-  padding: 0 10px;
+  padding: 0 18px;
 }
 .main-nav li:last-child:after {
   content: "";
 }
 .main-nav li a {
-  color: #929292;
+  color: #ffffff;
   font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
