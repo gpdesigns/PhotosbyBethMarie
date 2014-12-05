@@ -60,6 +60,7 @@ a:hover {
   text-decoration: none;
 }
 p {
+  letter-spacing: -1px;
   font-family: 'open sans';
   font-size: 14px;
   text-transform: uppercase;
@@ -273,8 +274,8 @@ footer {
 }
 footer p:first-child {
   font-weight: bold;
-  float: right;
-  margin-right: 3em;
+  float: left;
+  margin-right: 7em;
 }
 footer p:last-child {
   float: right;
@@ -282,7 +283,7 @@ footer p:last-child {
 }
 footer ul {
   float: right;
-  margin-top: .5em;
+  margin-top: .7em;
 }
 footer li {
   float: left;
@@ -300,12 +301,26 @@ footer li {
   color: #fff;
 }
 .social-icons.social-white li a .fa:hover {
-  background-color: #5d99a5;
+  background-color: #000;
   border: 1px solid #777;
   color: #fff;
   padding: 0;
-  -moz-transform: rotate(-11deg);
-  transform: rotate(-11deg);
+  -moz-transform: rotate(-14deg);
+  transform: rotate(-14deg);
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+.social-icons.social-white li a .fa:hover.fa-flickr {
+  background-color: #000;
+  background-image: linear-gradient(to right, #0062da 50%, #ff0084 50%);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-icons.social-white li a .fa:hover.fa-facebook-square {
+  background-color: #3b5998;
+  color: #fff;
 }
 .social-icons li a .fa {
   background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
