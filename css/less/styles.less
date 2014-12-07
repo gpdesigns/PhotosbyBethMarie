@@ -3,17 +3,27 @@
 * Main Stylesheet
 * ----------------------------------------------------------------------------------------------------------------
 */
+
+html, body {
+  background-color:#000;
+  height:100%;
+}
+
+.padL {
+  padding-left:5%;
+}
+
+.padR {
+  padding-left:-3%;
+}
+
 a, a:active, a:hover, a:focus {
   outline:0;
 }
 
-.right {
-  float: right;
-}
-
 .page-container {
   min-height: 100%;
-  margin-bottom:-63px;
+  margin:0 auto -63px;
 
     &:after {
       content:"";
@@ -32,4 +42,5 @@ a, a:active, a:hover, a:focus {
 @import "banner.less";
 @import "header.less";
 @import "footer.less";
+@import "grid.less";
 /*  Load responsive rules  */

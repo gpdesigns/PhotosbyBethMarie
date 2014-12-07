@@ -4,25 +4,15 @@
 * ----------------------------------------------------------------------------------------------------------------
 */
 .main-header {
-  background:rgba(0, 0, 0, .6);
+  background: linear-gradient(to right, rgba(0, 0, 0, 1),  rgba(0, 0, 0, .5));
+  border-bottom:1px solid #222;
   height:63px;
   position:fixed;
   top:0;
   width:100%;
   z-index:9999;
-  border-bottom:1px solid #222;
 }
 
-.dark {
-  background: linear-gradient(to right, rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0));
-  border-right:1px solid #111;
-  height:63px;
-  left:0;
-  margin:0;
-  padding:0 0 0 @baseline * 7;
-  position: absolute;
-  transition:all 1s ease;
-}
 
 .main-nav {
   float:right;
@@ -43,6 +33,7 @@
       }
         &:last-child:after {
           content:"";
+          padding:0;
         }
       
     a {
@@ -64,4 +55,23 @@
 }
 .teal {
   color:@color-link-hover;
+}
+
+ul.social-icons {
+  display:inline;
+  left:350px;
+  position: relative;
+  top:20px;
+}
+.social-icons li {
+  margin-left:.4em;
+}
+
+.header-open {
+  color:#fff;
+  font-weight: bold;
+  display:inline;
+  left:160px;
+  position: relative;
+  top:10px;
 }

@@ -11,19 +11,31 @@
 }
 
 .cycle-slideshow {
-
+  background-color: #000;
+  height:100%;
   position: relative;
+  width: 100%;
+
+}
+.slider-image {
+  box-shadow: 0px 0px 3px #fff;
+  display:block;
+  margin:1.4em auto 0 auto;
+  position: relative;
+  top:70px;
+  max-width: 100%;
 }
 
+
 #slide-1 {
-  background: url(../images/1.jpg) no-repeat center center fixed; 
+  background: url(../images/1-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #slide-2 {
-  background: url(../images/2.jpg) no-repeat center center fixed; 
+  background: url(../images/2-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,7 +43,7 @@
 }
 
 #slide-3 {
-  background: url(../images/3.jpg) no-repeat center bottom fixed; 
+  background: url(../images/3-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,7 +51,7 @@
 }
 
 #slide-4 {
-  background: url(../images/4.jpg) no-repeat center top fixed; 
+  background: url(../images/4-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +59,7 @@
 }
 
 #slide-5 {
-  background: url(../images/5.jpg) no-repeat center center fixed; 
+  background: url(../images/5-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,7 +67,7 @@
 }
 
 #slide-6 {
-  background: url(../images/6.jpg) no-repeat center center fixed; 
+  background: url(../images/6-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,7 +75,7 @@
 }
 
 #slide-7 {
-  background: url(../images/7.jpg) no-repeat center center fixed; 
+  background: url(../images/7-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,12 +83,13 @@
 }
 
 #slide-8 {
-  background: url(../images/8.jpg) no-repeat center center fixed; 
+  background: url(../images/8-bg.jpg) no-repeat 0 0 fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 .cycle-prev, .cycle-next {
   margin-top: -1.5em;
@@ -107,23 +120,42 @@
   margin-top:4em;
 }
 h1.slider-header {
-  color:#E7314D;
+  color:#7AC4D2;
   font-family:@banner-desc;
   font-weight:300;
-  letter-spacing: -1px;
-  margin:0;
-  padding:1em;
+  letter-spacing: -3px;
+  margin:0 0 0 3%;
+  padding:.4em;
+  text-align: center;
+
 }
 
 .fancy-box {
   display:inline-block;
-  padding:0 @baseline * 6;
+  padding:0;
   width:100%;
   position: relative;
 }
 
 .fancy-red {
-  background: linear-gradient(to top, rgba(0, 0, 0, 1),  rgba(0, 0, 0, .5));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1),  rgba(0, 0, 0, .1));
   position: absolute;
   bottom:0;
+}
+
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* Media Queries
+* ----------------------------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width : 48em) {
+
+  .slide {
+    min-height:800px;
+    overflow:hidden;
+    width:100%;
+  }
+
+
 }
