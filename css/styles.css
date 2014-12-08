@@ -287,7 +287,7 @@ h1.slider-header {
   display: none;
 }
 .main-nav li:hover ul {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(#313131, #131313);
   display: block;
   left: -50px;
   position: absolute;
@@ -305,7 +305,7 @@ h1.slider-header {
   width: 200px;
 }
 .main-nav li:hover ul li a:hover {
-  background-color: rgba(177, 177, 177, 0.8);
+  background: linear-gradient(#5c5c5c, #424141);
   color: #000;
   font-weight: bold;
 }
