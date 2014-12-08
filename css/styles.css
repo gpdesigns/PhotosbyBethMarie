@@ -3,6 +3,13 @@
 * Main Stylesheet
 * ----------------------------------------------------------------------------------------------------------------
 */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   background-color: #000;
@@ -10,9 +17,6 @@ body {
 }
 .padL {
   padding-left: 5%;
-}
-.padR {
-  padding-left: -3%;
 }
 a,
 a:active,
@@ -115,12 +119,14 @@ h1 {
   width: 100%;
 }
 .slider-image {
-  box-shadow: 0px 0px 3px #fff;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px #000;
   display: block;
   margin: 1.4em auto 0 auto;
+  max-width: 100%;
+  padding: 1em;
   position: relative;
   top: 70px;
-  max-width: 100%;
 }
 #slide-1 {
   background: url(../images/1-bg.jpg) no-repeat 0 0 fixed;
@@ -210,7 +216,6 @@ h1.slider-header {
   font-weight: 300;
   letter-spacing: -3px;
   margin: 0 0 0 3%;
-  padding: .4em;
   text-align: center;
 }
 .fancy-box {
@@ -250,28 +255,9 @@ h1.slider-header {
   width: 100%;
   z-index: 9999;
 }
-.main-nav {
-  float: right;
-  overflow: hidden;
-}
-.main-nav li {
-  float: left;
-  margin-left: .5em;
-}
-.main-nav li .active {
-  color: #7ac4d2;
-}
-.main-nav li:after {
-  color: #777;
-  content: "/";
-  padding: 0 18px;
-}
-.main-nav li:last-child:after {
-  content: "";
-  padding: 0;
-}
-.main-nav li a {
+.main-nav a {
   color: #ffffff;
+  display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -280,16 +266,117 @@ h1.slider-header {
   text-transform: uppercase;
   transition: all 0.35s ease-in-out 0s;
 }
-.main-nav li a:hover {
+.main-nav a:hover {
   color: #7ac4d2;
   text-decoration: none;
+}
+.main-nav {
+  float: right;
+}
+.main-nav .active {
+  color: #7ac4d2;
+}
+.main-nav li {
+  cursor: pointer;
+  float: left;
+  margin-left: 5rem;
+  position: relative;
+  width: 100px;
+}
+.main-nav li ul {
+  display: none;
+}
+.main-nav li:hover ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  left: -50px;
+  position: absolute;
+  top: 63px;
+  width: 200px;
+}
+.main-nav li:hover ul li a {
+  border-bottom: 1px solid #222;
+  border-left: 10px solid #555;
+  display: inline-block;
+  left: -50px;
+  padding-left: -5px;
+  position: relative;
+  text-transform: uppercase;
+  width: 200px;
+}
+.main-nav li:hover ul li a:hover {
+  background-color: rgba(177, 177, 177, 0.8);
+  color: #000;
+  font-weight: bold;
+}
+.main-nav li:hover ul li a.animals {
+  border-left-color: red;
+}
+.main-nav li:hover ul li a.birds {
+  border-left-color: orange;
+}
+.main-nav li:hover ul li a.clouds {
+  border-left-color: yellow;
+}
+.main-nav li:hover ul li a.critters {
+  border-left-color: green;
+}
+.main-nav li:hover ul li a.manipulated {
+  border-left-color: blue;
+}
+.main-nav li:hover ul li a.moon {
+  border-left-color: #4B0082;
+}
+.main-nav li:hover ul li a.nature {
+  border-left-color: BlueViolet;
+}
+.main-nav li:hover ul li a.people {
+  border-left-color: white;
+}
+.main-nav li:hover ul a:before {
+  content: "";
+  padding: 23px;
+  margin-left: 0px;
+}
+.pad-r {
+  margin-right: 10px;
+}
+.fa-paw {
+  color: red;
+}
+.fa-twitter {
+  color: orange;
+}
+.fa-cloud {
+  color: yellow;
+}
+.fa-qq {
+  color: green;
+}
+.fa-sliders {
+  color: blue;
+}
+.fa-leaf {
+  color: BlueViolet;
+}
+.fa-user {
+  color: white;
+}
+.fa-moon-o {
+  color: #4B0082;
+}
+.fa-caret-down {
+  color: #7ac4d2;
+}
+.pad-l {
+  padding-left: 5px;
 }
 .teal {
   color: #7ac4d2;
 }
 ul.social-icons {
-  display: inline;
-  left: 350px;
+  display: inline-block;
+  left: 250px;
   position: relative;
   top: 20px;
 }
@@ -298,9 +385,9 @@ ul.social-icons {
 }
 .header-open {
   color: #fff;
+  display: inline-block;
   font-weight: bold;
-  display: inline;
-  left: 160px;
+  left: 60px;
   position: relative;
   top: 10px;
 }
@@ -325,6 +412,7 @@ footer p,
 .push p {
   font-weight: bold;
   text-align: center;
+  padding-top: 15px;
 }
 .social-icons li,
 .social-icons li a,
