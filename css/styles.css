@@ -262,6 +262,7 @@ body#portfolio .main {
 }
 body#portfolio section {
   background: url(../images/portfolio-bg.jpg) 0 0 repeat;
+  padding-bottom: 4em;
   width: 100%;
 }
 body#portfolio section .main h2 {
@@ -287,7 +288,115 @@ body#portfolio section .main p {
   display: inline-block;
   height: 269px;
   margin-left: 25px;
+  overflow: hidden;
   width: 269px;
+}
+.category li .d {
+  position: relative;
+}
+.category li .d:after {
+  content: "\A";
+  border-style: solid;
+  border-width: 130px 135px 130px 130px;
+  border-color: transparent transparent transparent #000 ;
+  position: absolute;
+  left: 139px;
+  top: 12px;
+  transform: rotate(45deg);
+}
+.category li .title {
+  color: #fff;
+  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: bold;
+  left: 200px;
+  letter-spacing: -1px;
+  position: relative;
+  text-transform: uppercase;
+  top: 240px;
+  z-index: 10;
+}
+.category li .title.animals {
+  color: #ff0000;
+}
+.category li .title.birds {
+  color: #ffa500;
+}
+.category li .title.clouds {
+  color: #ffff00;
+}
+.category li .title.critters {
+  color: #008000;
+}
+.category li .title.digiart {
+  color: #0000ff;
+}
+.category li .title.moon {
+  color: #4b0082;
+}
+.category li .title.nature {
+  color: #8a2be2;
+}
+.category li .title.people {
+  color: #c71585;
+}
+.category li .title.places {
+  color: #ffffff;
+}
+.title {
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+figure {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.items li figure img {
+  display: block;
+  width: 100%;
+}
+figure li a,
+figure li a img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+figure img {
+  display: inline;
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+figure a:hover img {
+  transform: scale(1.1);
+}
+figure a .text-overlay {
+  background: none repeat scroll 0 0 rgba(20, 20, 20, 0.55);
+  height: 269px;
+  opacity: 0;
+  padding: 50px;
+  position: absolute;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  z-index: 100;
+}
+figure a:hover .text-overlay {
+  opacity: 1;
+}
+figure a .text-overlay .info {
+  left: 30px;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  width: 80%;
+}
+figure a .text-overlay .info span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 0;
 }
 /**
 * ----------------------------------------------------------------------------------------------------------------
