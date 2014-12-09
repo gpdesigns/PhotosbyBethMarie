@@ -89,6 +89,46 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/css\/less\/header.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/less\/header.less",
+		"outputAbbreviatedPath": "\/css\/css\/header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/css\/less\/portfolio.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/less\/portfolio.less",
+		"outputAbbreviatedPath": "\/css\/css\/portfolio.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/css\/less\/styles.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -148,6 +188,15 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/css\/styles.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/styles.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/images\/1-bg.jpg": {
 		"fileType": 16384,
@@ -325,6 +374,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/animals.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22164,
+		"inputAbbreviatedPath": "\/images\/animals.jpg",
+		"outputAbbreviatedPath": "\/images\/animals.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/birds.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11730,
+		"inputAbbreviatedPath": "\/images\/birds.jpg",
+		"outputAbbreviatedPath": "\/images\/birds.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/clouds.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9097,
+		"inputAbbreviatedPath": "\/images\/clouds.jpg",
+		"outputAbbreviatedPath": "\/images\/clouds.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/critters.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23835,
+		"inputAbbreviatedPath": "\/images\/critters.jpg",
+		"outputAbbreviatedPath": "\/images\/critters.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/digiart.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16317,
+		"inputAbbreviatedPath": "\/images\/digiart.jpg",
+		"outputAbbreviatedPath": "\/images\/digiart.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/footer-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -347,6 +451,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/moon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9911,
+		"inputAbbreviatedPath": "\/images\/moon.jpg",
+		"outputAbbreviatedPath": "\/images\/moon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/nature.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28097,
+		"inputAbbreviatedPath": "\/images\/nature.jpg",
+		"outputAbbreviatedPath": "\/images\/nature.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/people.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21509,
+		"inputAbbreviatedPath": "\/images\/people.jpg",
+		"outputAbbreviatedPath": "\/images\/people.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/photosbybeth_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -354,6 +491,17 @@
 		"initialSize": 7050,
 		"inputAbbreviatedPath": "\/images\/photosbybeth_logo.png",
 		"outputAbbreviatedPath": "\/images\/photosbybeth_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/portfolio-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56759,
+		"inputAbbreviatedPath": "\/images\/portfolio-bg.jpg",
+		"outputAbbreviatedPath": "\/images\/portfolio-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

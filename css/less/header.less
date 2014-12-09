@@ -31,6 +31,8 @@
 
 .main-nav {
   float:right;
+  position:relative;
+  left:-30px;
   .active {
     color:@color-link-hover;
   }
@@ -40,7 +42,7 @@
       float:left;
       margin-left:5rem;
       position: relative;
-      width:100px;
+
         ul {
           display: none;
         }
@@ -81,7 +83,7 @@
                 &.critters {
                   border-left-color:green;
                 }
-                &.manipulated {
+                &.digiart {
                   border-left-color:blue;
                 }
                 &.moon {
@@ -89,8 +91,11 @@
                 }
                 &.nature {
                   border-left-color:BlueViolet;
-                }
+                }                
                 &.people {
+                  border-left-color:mediumVioletRed;
+                }
+                &.places {
                   border-left-color:white;
                 }
               }
@@ -127,10 +132,13 @@
   color: BlueViolet;
 }
 .fa-user {
-  color:white;
+  color:mediumVioletRed;
 }
 .fa-moon-o {
   color:#4B0082;
+}
+.fa-plane {
+  color:white;
 }
 .fa-caret-down {
   color:@color-link-hover ;
@@ -146,7 +154,7 @@
 
 ul.social-icons {
   display:inline-block;
-  left:250px;
+  left:290px;
   position: relative;
   top:20px;
 }
@@ -154,11 +162,70 @@ ul.social-icons {
   margin-left:.4em;
 }
 
+.social-icons li, .social-icons li a, .social-icons li a .fa {
+    font-size: 18px;
+    padding-right:1em;
+}
+
+.social-icons.social-white li a .fa {
+    background-color:#7AC4D2;
+    border: 1px solid #68acb9;
+    color: #fff;
+}
+
+.social-icons.social-white li a .fa:hover {
+    background-color:#000;
+    border: 1px solid #777;
+    color: #fff;
+    padding:0;
+    -moz-transform: rotate(-14deg);
+    transform: rotate(-14deg);
+    height:30px;
+    width:30px;
+    font-size: 20px;
+}
+.social-icons.social-white li a .fa:hover.fa-flickr  {
+  background-color:#000;
+  background-image: linear-gradient(to right, #0062da 50%, #ff0084 50%);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.social-icons.social-white li a .fa:hover.fa-facebook-square  {
+  background-color:#3b5998;
+  color:#fff; 
+}
+
+.social-icons li a .fa {
+    background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 26px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+
+  .social-icons li a .fa {
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+.social-icons li, .social-icons li a, .social-icons li a .fa {
+    display: inline-block;
+    font-size: 14px;
+    height: 26px;
+    padding-right:1em;
+    -moz-transform: rotate(7deg);
+    transform: rotate(7deg);
+    width: 26px;
+}
+
 .header-open {
   color:#fff;
   display:inline-block;
   font-weight: bold;
-  left:60px;
+  left:100px;
   position: relative;
   top:10px;
 }
