@@ -6,6 +6,10 @@
   <meta name="description" content="Beth Marie Photos -- The world as I see it">
   <meta name="author" content="Gregory Paul Designs">
 
+  <!--HTML5 Shiv-->
+      <!--[if lt IE 9]> 
+              <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+      <![endif]-->
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
@@ -18,6 +22,9 @@
 
   <!-- Animate css -->
   <link rel="stylesheet" href="css/animate.css">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/simple-sidebar.css">
    <!-- Stylesheets -->
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -39,18 +46,8 @@
           <nav class="main-nav fadeIn animated">
             <ul>
               <li><a class="active" href="index.html"><i class="fa fa-home pad-r"></i>Home</a></li>
-              <li><a href="portfolio.html"><i class="fa fa-camera pad-r"></i>Portfolio<i class="fa fa-caret-down pad-l"></i></a>
-              <ul>
-                <li><a id="animals" class="animals" href=""><i class="fa fa-paw pad-r"></i>animals</a></li>
-                <li><a id="birds" class="birds" href=""><i class="fa fa-twitter pad-r"></i>birds</a></li>
-                <li><a id="clouds" class="clouds" href=""><i class="fa fa-cloud pad-r"></i>clouds</a></li>
-                <li><a id="critters" class="critters" href=""><i class="fa fa-qq pad-r"></i>critters</a></li>
-                <li><a id="digiart" class="digiart" href=""><i class="fa fa-sliders pad-r"></i>Digital Art</a></li>
-                <li><a id="moon" class="moon" href=""><i class="fa fa-moon-o pad-r"></i>moon</a></li>
-                <li><a id="nature" class="nature" href=""><i class="fa fa-leaf pad-r"></i>nature</a></li>
-                <li><a id="people" class="people" href=""><i class="fa fa-user pad-r"></i>people</a></li>
-                <li><a id="places" class="places" href=""><i class="fa fa-plane pad-r"></i>places</a></li>
-              </ul>
+              <li><a href="portfolio.html"><i class="fa fa-camera pad-r"></i>Portfolio</a>
+              
               </li>
               <li><a href="about.html"><i class="fa fa-info pad-r"></i>About</a></li>
               <li><a href="contact.html"><i class="fa fa-envelope pad-r"></i>Contact</a></li>
@@ -61,108 +58,85 @@
     </div> <!-- end container -->  
   </header>
   <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 main">
-          <h2>Hello!, Welcome to my portfolio page</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio quibusdam repellat, soluta consequatur, iusto molestiae pariatur nisi hic perspiciatis molestias error dolor eveniet praesentium ducimus deleniti quia eius ut!</p>
-        </div>
-      </div>
+  <div id="wrapper">
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">Gallery Menu</li>
+      <li><a id="animals" class="animals" href="#" data-filter=".animals"><i class="fa fa-paw pad-r"></i>animals</a></li>
+      <li><a id="birds" class="birds" href="#" data-filter=".birds"><i class="fa fa-twitter pad-r"></i>birds</a></li>
+      <li><a id="clouds" class="clouds" href="#"data-filter=".clouds"><i class="fa fa-cloud pad-r"></i>clouds</a></li>
+      <li><a id="critters" class="critters" href="#"data-filter=".critters" ><i class="fa fa-qq pad-r"></i>critters</a></li>
+      <li><a id="digiart" class="digiart" href="#"data-filter=".digi" ><i class="fa fa-sliders pad-r"></i>Digital Art</a></li>
+      <li><a id="moon" class="moon" href="#" data-filter=".moon"><i class="fa fa-moon-o pad-r"></i>moon</a></li>
+      <li><a id="nature" class="nature" href="#"data-filter=".nature" ><i class="fa fa-leaf pad-r"></i>nature</a></li>
+      <li><a id="people" class="people" href="#" data-filter=".people"><i class="fa fa-user pad-r"></i>people</a></li>
+      <li><a id="places" class="places" href="#"data-filter=".places" ><i class="fa fa-plane pad-r"></i>places</a></li>
+     </ul>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-offset-2 col-lg-10">
-          <div class="category">
-            <ul>
-              <li>
-                <div class="title animals">animals</div>
-                  <figure><a class="d" href="animals.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Animal photos and whatever other text here</span></div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 pull-right">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-offset-2 col-lg-10">
+                        <div class="category">
+                          <a href="#menu-toggle" class="btn btn-default btn-lg fl" id="menu-toggle"><i class="fa  fa-arrow-circle-left"></i> Toggle Menu</a>
+                          <div class="portfolio"> 
+                            <figure class="entry animals birds clouds"> 
+                                <img src="images/thumbs/thumbs_Cityscape_020.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry animals clouds"> 
+                                <img src="images/thumbs/thumbs_Landscapes_020.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry birds"> 
+                                <img src="images/thumbs/thumbs_Cityscape_021.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry birds clouds critters"> 
+                                <img src="images/thumbs/thumbs_Landscapes_025.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry birds people places animals"> 
+                                <img src="images/thumbs/thumbs_Cityscape_020.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry animals moon"> 
+                                <img src="images/thumbs/thumbs_Landscapes_020.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry moon"> 
+                                <img src="images/thumbs/thumbs_Cityscape_021.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry clouds"> 
+                                <img src="images/thumbs/thumbs_Landscapes_025.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry clouds"> 
+                                <img src="images/thumbs/thumbs_Landscapes_025.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+                            <figure class="entry clouds"> 
+                                <img src="images/thumbs/thumbs_Landscapes_025.jpg" alt=""> 
+                                <span class="hover"></span> 
+                            </figure>
+
+                          </div> 
+                        </div>
+                      </div>
                     </div>
-                    <img src="images/animals.jpg" alt=""></a>
-                  </figure>                         
-              </li>
-              <li>
-                <div class="title birds">birds</div>
-                  <figure><a class="d" href="birds.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Birds photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/birds.jpg" alt=""></a>
-                  </figure>                         
-              </li>
-              <li>
-                <div class="title clouds">clouds</div>
-                  <figure><a class="d" href="clouds.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Cloud photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/clouds.jpg" alt=""></a>
-                  </figure>                         
-              </li>
-              <li>
-                <div class="title critters">critters</div>
-                  <figure><a class="d" href="critters.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Critter photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/critters.jpg" alt=""></a>
-                  </figure>                         
-              </li>
-              <li>
-                <div class="title digiart">digital art</div>
-                  <figure><a class="d" href="digiart.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Digital art photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/digiart.jpg" alt=""></a>
-                  </figure>                        
-              </li>
-              <li>
-                <div class="title moon">moon</div>
-                  <figure><a class="d" href="moon.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>moon photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/moon.jpg" alt=""></a>
-                  </figure>                        
-              </li>
-              <li>
-                <div class="title nature">nature</div>
-                  <figure><a class="d" href="nature.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Nature photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/nature.jpg" alt=""></a>
-                  </figure>                         
-              </li>
-              <li>
-                <div class="title people">people</div>
-                  <figure><a class="d" href="people.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>People photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/people.jpg" alt=""></a>
-                  </figure>                        
-              </li>
-              <li>
-                <div class="title places">places</div>
-                  <figure><a class="d" href="places.html">
-                    <div class="text-overlay">
-                      <div class="info"><span>Places photos and whatever other text here</span></div>
-                    </div>
-                    <img src="images/places.jpg" alt=""></a>
-                  </figure>                      
-              </li>            
-            </ul>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div> <!-- /#page-content-wrapper -->    
   </section>
   <div class="push"></div>
 </div> <!-- end page-container -->
+</div>
  <footer>
    <div class="container-fluid">
       <div class="row">
@@ -177,5 +151,13 @@
 <!-- JS -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>
