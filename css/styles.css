@@ -195,6 +195,9 @@ body {
   background-color: #000;
   height: 100%;
 }
+img {
+  max-width: 100%;
+}
 .padL {
   padding-left: 5%;
 }
@@ -463,25 +466,25 @@ body#portfolio section .main p {
   left: -200px;
   top: 70px;
 }
-.category {
+.page {
   width: 100%;
   margin-top: 4em;
 }
-.category ul {
+.page ul {
   list-style: none;
   position: relative;
 }
-.category li {
+.page li {
   display: inline-block;
   height: 269px;
   margin-left: 25px;
   overflow: hidden;
   width: 269px;
 }
-.category li .d {
+.page li .d {
   position: relative;
 }
-.category li .d:after {
+.page li .d:after {
   content: "\A";
   border-style: solid;
   border-width: 130px 135px 130px 130px;
@@ -494,7 +497,7 @@ body#portfolio section .main p {
   -webkit-transform: rotate(45deg);
   width: 0;
 }
-.category li .title {
+.page li .title {
   color: #fff;
   font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: bold;
@@ -505,31 +508,31 @@ body#portfolio section .main p {
   top: 240px;
   z-index: 10;
 }
-.category li .title.animals {
+.page li .title.animals {
   color: #ff0000;
 }
-.category li .title.birds {
+.page li .title.birds {
   color: #ffa500;
 }
-.category li .title.clouds {
+.page li .title.clouds {
   color: #ffff00;
 }
-.category li .title.critters {
+.page li .title.critters {
   color: #008000;
 }
-.category li .title.digiart {
+.page li .title.digiart {
   color: #0000ff;
 }
-.category li .title.moon {
+.page li .title.moon {
   color: #4b0082;
 }
-.category li .title.nature {
+.page li .title.nature {
   color: #8a2be2;
 }
-.category li .title.people {
+.page li .title.people {
   color: #c71585;
 }
-.category li .title.places {
+.page li .title.places {
   color: #ffffff;
 }
 .title {
@@ -1000,5 +1003,62 @@ footer p,
 }
 .grid-pad [class*='col-']:last-of-type {
   padding-right: 20px;
+}
+/**
+* ----------------------------------------------------------------------------------------------------------------
+* About Styles
+* ----------------------------------------------------------------------------------------------------------------
+*/
+body#about .wrapper {
+  background: url(../images/about-bg.jpg) no-repeat 0 0 fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: block;
+  margin-top: 5em;
+  overflow: hidden;
+  text-align: center;
+}
+.contain-anim {
+  display: block;
+  height: 150px;
+  margin-top: 5em;
+  width: 100%;
+}
+.contain-anim h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 46px;
+  left: 55%;
+  letter-spacing: -1px;
+}
+.bio {
+  background-color: #fff;
+  margin-top: 2em;
+  padding: 10px;
+}
+.bio p {
+  font-size: 1.4em;
+  margin-bottom: 21px;
+  text-transform: none;
+  height: auto;
+}
+.bio h1 {
+  margin-left: 10px;
+}
+.bio img {
+  display: inline;
+  float: left;
+  padding-right: 20px;
+}
+section {
+  background: url(../images/portfolio-bg.jpg) 0 0 repeat;
+  min-height: 700px;
+  padding-bottom: 4em;
+  width: 100%;
+}
+.p50 {
+  padding-left: 160px;
 }
 /*  Load responsive rules  */
