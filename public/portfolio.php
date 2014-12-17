@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Photos By Beth Marie</title>
-  <meta name="description" content="Beth Marie Photos -- The world as I see it">
-  <meta name="author" content="Gregory Paul Designs">
-
-  <!--HTML5 Shiv-->
-      <!--[if lt IE 9]> 
-              <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-      <![endif]-->
-  <!-- Mobile Specific Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-  <!-- Font Awesome Styles -->
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
-  <!-- Animate css -->
-  <link rel="stylesheet" href="css/animate.css">
-  <!-- Fancybox -->
-  <link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
-  <!-- Bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/simple-sidebar.css">
-   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+<?php include("../includes/layouts/header.php") ?>
 <body id="portfolio">
 <div class="page-container">
   <header class="main-header">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 padL">
-          <a href="index.html"><h1>Photos by <span class="teal">BethMarie</span></h1></a>
+          <a href="index.php"><h1>Photos by <span class="teal">BethMarie</span></h1></a>
         </div> <!-- end col-lg-4 -->
         <div class="col-lg-9 padR">
           <ul class="social-icons social-white nav-default">
@@ -47,10 +15,10 @@
           <p class="header-open">Follow me on <i class="fa fa-caret-right fa-lg"></i></p>
           <nav class="main-nav fadeIn animated">
             <ul>
-              <li><a href="index.html"><i class="fa fa-home pad-r"></i>Home</a></li>
-              <li><a class="active" href="portfolio.html"><i class="fa fa-camera pad-r"></i>Portfolio</a></li>
-              <li><a href="about.html"><i class="fa fa-info pad-r"></i>About</a></li>
-              <li><a href="contact.html"><i class="fa fa-envelope pad-r"></i>Contact</a></li>
+              <li><a href="index.php"><i class="fa fa-home pad-r"></i>Home</a></li>
+              <li><a class="active" href="portfolio.php"><i class="fa fa-camera pad-r"></i>Portfolio</a></li>
+              <li><a href="about.php"><i class="fa fa-info pad-r"></i>About</a></li>
+              <li><a href="contact.php"><i class="fa fa-envelope pad-r"></i>Contact</a></li>
             </ul>
           </nav>
         </div> <!-- end col-lg-8 -->
@@ -379,20 +347,8 @@
       </div> <!-- end page-content-wrapper -->
               
   </section> <!-- end section -->
-  <div class="push"></div>
-</div> <!-- end page-container -->
 </div>
- <footer>
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-            <p><span class="teal">&copy; 2014 PhotosByBethMarie.com</span> | All rights reserved</p>
-        </div> <!-- end col-xs-3 -->          
-      </div> <!-- end row -->
-
-    </div> <!-- end container -->
- </footer>
-
+<?php include("../includes/layouts/footer.php") ?>
 <!-- JS -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
