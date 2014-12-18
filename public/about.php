@@ -13,15 +13,8 @@
             <li><a href="http://flickr.com/photos/beth53" target="_blank"><i class="fa fa-flickr fa-2x"></i></a></li>
           </ul>
           <p class="header-open">Follow me on <i class="fa fa-caret-right fa-lg"></i></p>
-          <nav class="main-nav fadeIn animated">
-            <ul>
-              <li><a href="index.php"><i class="fa fa-home pad-r"></i>Home</a></li>
-              <li><a href="portfolio.php"><i class="fa fa-camera pad-r"></i>Portfolio</a>              
-              </li>
-              <li><a class="active" href="about.php"><i class="fa fa-info pad-r"></i>About</a></li>
-              <li><a href="contact.php"><i class="fa fa-envelope pad-r"></i>Contact</a></li>
-            </ul>
-          </nav>
+          <?php include("../includes/layouts/nav.php") ?>
+
         </div> <!-- end col-lg-8 -->
       </div> <!-- end row -->
     </div> <!-- end container -->  

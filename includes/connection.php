@@ -6,6 +6,6 @@
   $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
   if(mysqli_connect_errno()) {
-    die("Database Connection Failed");
+    die('Database Connection Failed');
   }
 ?>
