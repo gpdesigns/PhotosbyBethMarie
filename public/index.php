@@ -1,3 +1,4 @@
+<?php require_once("../includes/connection.php"); ?>
 <?php include "../includes/layouts/header.php" ?>
 <body id="homepage">
 <div class="page-container">
@@ -87,7 +88,7 @@
       <div class="slide" id="slide-8">
         <img class="slider-image" src="images/8.jpg" alt="">
         <header class="fancy-box fancy-red">
-          <h1 class="slider-header">Forrest of Sepia</h1>
+          <h1 class="slider-header">Rock and Roll</h1>
         </header> 
       </div>  <!-- end slider-8 -->
     </div> <!-- end cycle-slideshow -->  
