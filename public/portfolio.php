@@ -2,19 +2,7 @@
 <?php require_once("../includes/functions.php") ?>
 <?php include("../includes/layouts/header.php") ?>
 <body id="portfolio">
-<div class="page-container">
-  <header class="main-header">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 padL">
-          <a href="index.php"><h1>Photos by <span class="teal">BethMarie</span></h1></a>
-        </div> <!-- end col-lg-4 -->
-        <div class="col-lg-9 padR">
-          <ul class="social-icons social-white nav-default">
-            <li><a href="https://www.facebook.com/bethmitchellphototgraphy" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="http://flickr.com/photos/beth53" target="_blank"><i class="fa fa-flickr fa-2x"></i></a></li>
-          </ul>
-          <p class="header-open">Follow me on <i class="fa fa-caret-right fa-lg"></i></p>
+
           <?php include("../includes/layouts/nav.php") ?>
         </div> <!-- end col-lg-8 -->
       </div> <!-- end row -->
@@ -39,7 +27,7 @@
       <div id="page-content-wrapper">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12 pull-right">
+            <div class="col-xs-12 pull-right">
                 <div class="menu">
                   <a href="#menu-toggle" class="btn btn-default btn-lg" id="menu-toggle"><i class="fa  fa-arrow-circle-left"></i> Toggle Menu</a>
                 </div>
@@ -49,7 +37,7 @@
                   while($photo = mysqli_fetch_assoc($photo_set)) {?>             
                 <figure class="entry <?php echo $photo['menu_name']; ?>">
                 <a href="<?php echo $photo['src'] ?>" class="fancybox" rel="<?php echo $photo['group'] ?>" title="<?php echo $photo['title'] ?>" alt="<?php echo $photo['alt'] ?>">
-                  <img src="<?php echo $photo['src'] ?>" alt="<?php echo $photo['alt'] ?>"> 
+                  <img src="<?php echo $photo['thumb-src'] ?>" alt="<?php echo $photo['alt'] ?>"> 
                   <span class="hover"></span>
                   </a> 
                 </figure>
